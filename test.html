@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tests</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <div class="test-container">
+      <div class="test-title">
+        <h1>Porte Motorisée</h1>
+      </div>
+      <div class="test-informations">
+        <div class="test-informations-part">
+          <h2>Lancer un cycle d'ouverture/fermeture :</h2>
+        </div>
+        <div class="test-informations-part">
+          <div class="test-animation">
+            <div class="book">
+              <input class="check" type="checkbox" id="c1" />
+              <input class="check" type="checkbox" id="c2" />
+
+              <div class="flip-book">
+                <div class="gyro"></div>
+                <div class="flip-left" id="p1">
+                  <div class="back"></div>
+                  <div class="front">
+                    <article class="front-background">
+                      <div class="front-container">
+                        <em>..</em>
+                        <span>VANTAIL DE GAUCHE</span>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="flip-left" id="p2">
+                  <div class="back"></div>
+                  <div class="front">
+                    <article class="front-background-open">
+                      <div class="front-container-open"></div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-book-right">
+                <div class="flip-right" id="p1">
+                  <div class="back"></div>
+                  <div class="front">
+                    <article class="front-background">
+                      <div class="front-container">
+                        <em>...</em>
+                        <span>VANTAIL DE DROITE</span>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="flip-right" id="p2">
+                  <div class="back"></div>
+                  <div class="front">
+                    <article class="front-background-open">
+                      <div class="front-container-open"></div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="test-menu">
+            <div class="test-analyse">
+              <div class="test-buttons">
+                <button class="open-button">OUVRIR LES VANTAUX</button>
+                <button class="close-button" disabled>
+                  FERMER LES VANTAUX
+                </button>
+                <button class="emergency-button">ARRÊT D'URGENCE</button>
+              </div>
+
+              <br />
+              <div>
+                <p>
+                  <strong>État de la porte : </strong>
+                  <span class="door-state">FERMÉE</span>
+                </p>
+                <p>
+                  <strong>Capteur de fermeture : </strong>
+                  <span class="close-sensor-state">ON</span>
+                </p>
+                <p>
+                  <strong>Capteur d'ouverture : </strong>
+                  <span class="open-sensor-state">OFF</span>
+                </p>
+                <!-- <p id="sec">00</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="test-informations-part">
+          <a href="index.html"
+            ><button>
+              Quitter la simulation et voir les états réels de la porte
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

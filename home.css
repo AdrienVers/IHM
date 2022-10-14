@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Trebuchet, sans-serif;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.home-title {
+  height: 15%;
+  background-color: turquoise;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title h1 {
+  text-transform: uppercase;
+}
+
+.home-informations {
+  height: 85%;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-informations-part:nth-child(1),
+.home-informations-part:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  height: 20%;
+}
+
+.home-informations-part:nth-child(1) {
+  align-items: flex-start;
+}
+
+.home-informations-part:nth-child(2) {
+  height: 50%;
+}
+
+.home-informations-part:nth-child(3) {
+  align-items: flex-end;
+}
+
+
+.home-informations-part:nth-child(1) h2 {
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.home-informations-part:nth-child(2) p {
+  line-height: 60px;
+  font-size: 1.8rem;
+  display : flex;
+  justify-content: space-between;
+}
+
+.home-informations-part:nth-child(2) span {
+  color: green;
+}
+
+.home-informations-part:nth-child(2) em {
+    opacity : 0;
+  }
+
+.home-informations-part:nth-child(3) button {
+  padding: 20px;
+  font-size: 1.4rem;
+}
+
+.home-informations-part:nth-child(3) a {
+  text-decoration: none;
+  color : black;
+}
+
+.home-informations-part:nth-child(3) button:hover {
+  cursor: pointer;
+}
