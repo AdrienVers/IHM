@@ -89,7 +89,6 @@
 }
 
 .test-animation {
-  background-color: yellow;
   width: 60%;
   display: flex;
   justify-content: center;
@@ -98,7 +97,6 @@
 }
 
 .test-menu {
-  background-color: red;
   width: 40%;
   display: flex;
   justify-content: space-evenly;
@@ -451,6 +449,7 @@
 
   .test-menu {
     width: 100%;
+    padding: 15px;
   }
 }
 
@@ -475,10 +474,6 @@
 
   .front-container {
     padding-left: 10px;
-  }
-
-  .test-menu {
-    padding: 15px;
   }
 
   .test-informations-part:nth-child(3) button {
