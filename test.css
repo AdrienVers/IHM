@@ -89,7 +89,7 @@
 }
 
 .test-animation {
-  /* background-color: yellow; */
+  background-color: yellow;
   width: 60%;
   display: flex;
   justify-content: center;
@@ -98,7 +98,7 @@
 }
 
 .test-menu {
-  /* background-color: aquamarine; */
+  background-color: red;
   width: 40%;
   display: flex;
   justify-content: space-evenly;
@@ -329,10 +329,8 @@
 .front-container {
   height: 96%;
   background-color: grey;
-}
-
-.front-container em {
-  opacity: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .front-container-open {
@@ -424,4 +422,79 @@
 .door-state {
   color: green;
   font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .test-container {
+    height: 100%;
+  }
+
+  .test-title {
+    padding: 10px;
+  }
+
+  .test-informations-part:nth-child(1) h2 {
+    padding: 10px;
+  }
+
+  .test-informations-part:nth-child(1) span {
+    white-space: nowrap;
+  }
+
+  .test-informations-part:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .test-animation {
+    width: 100%;
+  }
+
+  .test-menu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #cover,
+  .flip-book,
+  .flip-book-right {
+    width: 120px;
+    height: 162px;
+  }
+
+  .gyro {
+    height: 25px;
+    width: 25px;
+    right: -12px;
+    top: -33px;
+  }
+
+  .book {
+    border-top-width: 40px;
+  }
+
+  .front-container {
+    padding-left: 10px;
+  }
+
+  .test-menu {
+    padding: 15px;
+  }
+
+  .test-informations-part:nth-child(3) button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .test-menu p {
+    line-height: 35px;
+    font-size: 1.2rem;
+  }
+
+  .open-button,
+  .close-button,
+  .emergency-button {
+    font-size: 1rem;
+    padding: 5px 15px 5px 15px;
+  }
 }
