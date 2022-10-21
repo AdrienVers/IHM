@@ -116,12 +116,45 @@
 }
 
 @media (max-width: 500px) {
+  body {
+    background-color: rgb(240, 240, 240);
+  }
+
   .home-informations-part strong,
   .home-informations-part span {
     padding-left: 30px;
   }
-
   .home-container {
-    height: 75vh;
+    height: 95vh;
+  }
+
+  .home-informations-part:nth-child(1) h2 {
+    font-size: 1.4rem;
+  }
+
+  .home-informations-part:nth-child(2) p {
+    line-height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .home-informations-part:nth-child(3) button {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .home-informations-part:nth-child(1) {
+    height: 15%;
+  }
+
+  .home-informations-part:nth-child(2) {
+    height: 50%;
+  }
+
+  h2 {
+    padding: 15px;
+  }
+
+  .home-informations-part:nth-child(3) {
+    height: 35%;
   }
 }
